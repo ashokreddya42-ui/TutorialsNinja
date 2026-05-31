@@ -1,0 +1,31 @@
+package com.tutorialsninja.qa.pageObjects;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class SearchPage {
+
+	WebDriver driver;
+	
+	@FindBy(linkText="HP LP3065")
+	WebElement validProduct;
+	
+	@FindBy(xpath="//h2[text()='Products meeting the search criteria']/following-sibling::p")
+	WebElement noProductMessege;
+	
+	public SearchPage(WebDriver driver) {
+		this.driver=driver;
+		PageFactory.initElements(driver,this);
+	}
+	
+	public boolean displayofHPProuduct() {
+		boolean dispolayProduct=validProduct.isDisplayed();
+		return dispolayProduct;
+	}
+	public String productNotDisplayed() {
+		String noProductmsg= noProductMessege.getText();
+		return noProductmsg;
+	}
+}
