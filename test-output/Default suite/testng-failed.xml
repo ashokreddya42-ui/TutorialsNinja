@@ -6,8 +6,12 @@
       <class name="com.tutorialsninja.qa.testcases.Login">
         <methods>
           <include name="verifyLoginWithOutCredentials"/>
+          <include name="verifyLoginWithValidEmailAndInValidPassword"/>
           <include name="tearDown"/>
+          <include name="verifyLoginWithInValidCredentials"/>
           <include name="setUp"/>
+          <include name="verifyLoginWithInValidEmailAndValidPassword"/>
+          <include name="verifyLoginWithValidCredentials"/>
         </methods>
       </class> <!-- com.tutorialsninja.qa.testcases.Login -->
     </classes>

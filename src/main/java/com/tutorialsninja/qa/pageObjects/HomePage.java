@@ -10,19 +10,19 @@ public class HomePage {
 	WebDriver driver;
 	//Objects
 	@FindBy(xpath="//a[@title='My Account']") 
-	 WebElement myAccountMenu;
+	private WebElement myAccountMenu;
 	
 	@FindBy(linkText="Login")
-    WebElement loginOption;
+    private WebElement loginOption;
 	
 	@FindBy(linkText="Register")
-	WebElement selectRegisterOption;
+	private WebElement selectRegisterOption;
 	
 	@FindBy(xpath="//input[@name='search']")
-	WebElement searchbox;
+	private WebElement searchbox;
 	
 	@FindBy(xpath="//div[@id='search']/descendant::button")
-	WebElement clickOnSearchBtn;
+	private WebElement clickOnSearchBtn;
 	
 
 	

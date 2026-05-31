@@ -3,36 +3,14 @@
 <suite name="Failed suite [TutorialsNinja Automation Test Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.tutorialsninja.qa.testcases.Register">
-        <methods>
-          <include name="verifyRegisterwithoutDetails"/>
-          <include name="verifyRegisteringAccountByProvidingAllFields"/>
-          <include name="verifyRegisteringwithExistingEmail"/>
-          <include name="setUp"/>
-          <include name="verifyRegisteringAnAccountWithMandatoryFields"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.tutorialsninja.qa.testcases.Register -->
       <class name="com.tutorialsninja.qa.testcases.Login">
         <methods>
           <include name="verifyLoginWithOutCredentials"/>
           <include name="verifyLoginWithValidEmailAndInValidPassword"/>
           <include name="tearDown"/>
-          <include name="verifyLoginWithInValidCredentials"/>
           <include name="setUp"/>
-          <include name="verifyLoginWithInValidEmailAndValidPassword"/>
-          <include name="verifyLoginWithValidCredentials"/>
         </methods>
       </class> <!-- com.tutorialsninja.qa.testcases.Login -->
-      <class name="com.tutorialsninja.qa.testcases.Search">
-        <methods>
-          <include name="verifySearchWithValidProduct"/>
-          <include name="setUp"/>
-          <include name="verifySearchWithInValidProduct"/>
-          <include name="tearDown"/>
-          <include name="verifySearchWithOutProduct"/>
-        </methods>
-      </class> <!-- com.tutorialsninja.qa.testcases.Search -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [TutorialsNinja Automation Test Suite] -->

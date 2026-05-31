@@ -9,7 +9,7 @@ public class AccountPage {
  WebDriver driver;
 	
 	@FindBy(linkText="Edit your account information")
-	WebElement eidtYourAccountInformationOption;
+	private WebElement eidtYourAccountInformationOption;
 	
 
      public AccountPage(WebDriver driver) {
