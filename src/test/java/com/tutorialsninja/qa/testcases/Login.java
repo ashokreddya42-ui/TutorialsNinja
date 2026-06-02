@@ -21,7 +21,6 @@ public class Login extends Base {
 	public Login() {
 		super();
 	}
-
 	//WebDriver is Interface
 	//Testing
 	WebDriver driver;
