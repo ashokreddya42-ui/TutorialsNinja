@@ -21,8 +21,8 @@ public class Login extends Base {
 	public Login() {
 		super();
 	}
-
-	//It is webDriver
+	//WebDriver is Interface
+	//Testing
 	WebDriver driver;
 
 	@BeforeMethod
