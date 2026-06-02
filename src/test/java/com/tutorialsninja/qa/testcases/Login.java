@@ -22,7 +22,7 @@ public class Login extends Base {
 		super();
 	}
 
-	//WebDriver is Interface
+	//It is webDriver
 	WebDriver driver;
 
 	@BeforeMethod
